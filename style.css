@@ -2,44 +2,48 @@ body {
     font-family: "Franklin Gothic Medium", Arial, sans-serif;
     background-color: #1a1a1a;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Adjusted for mobile responsiveness */
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0; /* Added to remove default body padding */
 }
 
 .container {
     background-color: #3a3a3a;
-    padding: 40px;
+    padding: 20px; /* Adjusted for mobile responsiveness */
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     text-align: center;
+    width: 80%; /* Added width for better mobile display */
+    max-width: 400px; /* Added max-width to limit container size on larger screens */
+    margin: 20px; /* Adjusted for mobile responsiveness */
 }
 
 .player {
-    margin: 30px;
+    margin: 15px; /* Adjusted for mobile responsiveness */
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 36px; /* Adjusted font size for mobile display */
     font-family: "Old English", Arial, sans-serif;
     color: #800000;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Adjusted for mobile responsiveness */
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 24px; /* Adjusted font size for mobile display */
     color: #800000;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Adjusted for mobile responsiveness */
 }
 
 button {
-    font-size: 28px;
+    font-size: 24px; /* Adjusted font size for mobile display */
     background-color: #800000;
     color: #f0f0f0;
     border: none;
     border-radius: 10px;
-    padding: 15px 30px;
+    padding: 10px 20px; /* Adjusted padding for mobile display */
     cursor: pointer;
     transition: background-color 0.2s;
 }
@@ -50,7 +54,7 @@ button:hover {
 
 span {
     display: inline-block;
-    font-size: 48px;
+    font-size: 36px; /* Adjusted font size for mobile display */
     color: #000;
-    margin: 0 30px;
+    margin: 0 15px; /* Adjusted for mobile responsiveness */
 }

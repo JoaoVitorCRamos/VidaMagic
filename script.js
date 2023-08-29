@@ -1,6 +1,7 @@
 const player1Life = document.getElementById("player1-life");
 const player2Life = document.getElementById("player2-life");
-const dice = document.getElementById("dice");
+const dicePlayer1 = document.getElementById("dice-player1");
+const dicePlayer2 = document.getElementById("dice-player2");
 
 const resetLife = () => {
     player1Life.textContent = "20";
@@ -56,6 +57,9 @@ document.getElementById("reset-button").addEventListener("click", () => {
 });
 
 document.getElementById("roll-dice-button").addEventListener("click", () => {
-    const randomValue = Math.floor(Math.random() * 6) + 1;
-    dice.textContent = randomValue;
+    const randomValuePlayer1 = Math.floor(Math.random() * 6) + 1;
+    const randomValuePlayer2 = Math.floor(Math.random() * 6) + 1;
+
+    dicePlayer1.textContent = randomValuePlayer1;
+    dicePlayer2.textContent = randomValuePlayer2;
 });
